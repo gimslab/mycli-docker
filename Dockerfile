@@ -4,6 +4,7 @@ RUN apt-get update
 RUN apt-get -y install mycli
 
 RUN echo 'set -o vi' >> ~/.bashrc
+ADD .myclirc /root/.myclirc
 
 ENV WORK_DIR /workspace
 ENV RUN_SCRIPT $WORK_DIR/run.sh
