@@ -23,6 +23,7 @@ fi
 
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
+export MORE="-f"
 
 mycli --host $MYSQL_HOST --user $MYSQL_USER $MYSQL_DB
 
