@@ -2,6 +2,8 @@ FROM ubuntu
 
 RUN apt-get update
 RUN apt-get -y install mycli
+RUN apt-get -y install less
+RUN apt-get -y install netcat
 
 RUN echo 'set -o vi' >> ~/.bashrc
 ADD .myclirc /root/.myclirc
